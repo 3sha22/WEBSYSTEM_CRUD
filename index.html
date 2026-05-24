@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FITMATE Gym CRUD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Gym Member Management</h1>
+
+<div class="form">
+    <input id="ApplicationID" placeholder="Application ID">
+    <input id="TrainorID" placeholder="Trainor ID">
+    <input id="FirstName" placeholder="First Name">
+    <input id="LastName" placeholder="Last Name">
+    <input id="Age" placeholder="Age">
+    <input id="PlanID" placeholder="Plan ID">
+    <input id="Phone" placeholder="Phone">
+    <input id="Status" placeholder="Status">
+
+    <button onclick="addMember()">Add Member</button>
+    <button onclick="updateMember()">Update Member</button>
+</div>
+
+<hr>
+
+<input id="search" placeholder="Search by name..." onkeyup="searchMember()">
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>ID</th><th>First</th><th>Last</th><th>Age</th><th>Phone</th><th>Action</th>
+        </tr>
+    </thead>
+    <tbody id="tableData"></tbody>
+</table>
+
+<script src="script.js"></script>
+</body>
+</html>
